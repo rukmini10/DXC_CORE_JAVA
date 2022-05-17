@@ -1,0 +1,248 @@
+Java Naming convention:
+1.package name should be in lower case
+(project1)
+2.all classes or interfaces first letter should be capital
+(Project,Greetings)
+3. if class or interface containing more than one word , first letter of each word should be in upper case
+(NumberCalculator, FileNotFoundException)
+4. variable or method name first character should be in lower case but if more than one word containing then from second word,
+first letter should be capital
+(name,firstName,secondName),
+method example - find(), nextInt(), findFirstNumber()
+5. constant variable name should be in upper case
+eg- double PI=3.14;
+
+
+
+Comments are not executable:
+
+Single line comment: for writting single line comment
+//java code to print hello and welcome to java world
+ 
+ Multiline comment: for more than one line comment
+/* 
+line 1
+line 2
+line 3
+*/
+
+To print something in console - for constant message or variables
+System.out.println("hello");
+
+shortcut to run application
+ctrl + f11
+
+
+All public class name should match with file name
+
+Run->run configurations->Arguments tab-> there we can give name to display using args
+
+
+Java library divided in to number of packages:
+by default we will getting - lang package
+io - inputs and outputs
+net - related to networking
+util -it is a simple text scanner which can 
+parse primitive types and strings using regular expressions
+
+simple statement- when u runs sees all information one by one without skipping anything or 
+All lines executes one by one without skipping anything
+
+Q1. Write a Java class that declares variables to represent the length and width of a room in feet. Assign appropriate values to 
+the variables-for example, length = 15 and width = 25. Compute and display the floor space of the room in square feet 
+(area = length * width). Display explanatory text with the value—for example, The floor space is 375 square feet. Save the class 
+as Room.java.
+
+main method why do we use ?
+public static void main(String args[])
+Why we write public static and void before main method?
+Java program's main method has to be declared static because keyword static 
+allows main to be called without creating an object of the class in which 
+the main method is defined.
+
+
+
+IPO cycle - need to follow every time
+	I=>input(take value from user)
+				P=>processing based on input or operator given
+				O=>output
+				
+variable- it is memory location
+
+Data types-
+ byte -1byte
+  char -2
+  int -4
+  long -8 
+  float 
+  double
+  boolean
+
+conditional statement-
+1st- if else
+Use if to specify a block of code to be executed, if a specified condition is true
+T/F				
+	need to check if given statement is true what need to 
+                   else if given statemtn is false what need to 
+                   
+                   if(expression)
+                   statement for true
+                   else
+                   statemtnt for false
+                   
+                   
+                   if(expression){
+                   set of statements for true
+                   }
+                   else{
+                   set of statements for false
+                   }
+                             			
+				we can also use if else if more that one condition
+		
+		package name: conditional
+		Q1: java code to get age of two trainees and find out who is elder
+		Q2: java code to get any 3 numbers and find difference between biggest and smallest number
+		Q3: java code to get cost price and sale price of an item and findout loss or profit / no loss no profit
+		Q4: java code to get unit of electricity consumed and find the electric bill based on following
+		     - if units are less than 200 it is free
+		     - if units are >200 and <=500, then have to pay 5.25 rupees per unit
+		     - example- if 280 units 200 units are free and remaining 80 will be charges
+		     - units are >500 and <=800, 8.50 per unit	
+		Q5: java code to get marks for c,c++,java, find out grade based on avg marks
+		   A++ >90
+		   A   >80
+		   B   >70
+		   C   >60
+		   D   <60
+		 
+		 2nd conditional statement
+		 switch case
+		 
+		 Syntax:
+		 switch(choice){
+		 case 1:
+		 statement for true;
+		 break;
+		 case 2:
+		 statement for true;
+		 break;
+		 case 3:
+		 statement for true;
+		 break;
+		 case N;
+		 statement for true;
+		 break;
+		 default:
+		 statement for false;
+		 }  
+	
+	Q. java code to create a menu driven program which will ask choice based on choice 
+	do some calculation
+	
+	calculator
+1.Add
+2.Sub
+3.Mul
+4.Div
+5.exit
+
+Enter you choice(1-5):
+1
+enter first number:12
+enter second number:13
+sum is 25
+Enter you choice(1-5):
+5
+
+
+What is method in java?
+It is a block of code , used for completing a specific task
+
+Method Access mode
+Method name
+Method parameters
+mathod return type
+
+
+
+private
+protected
+public
+default
+
+calling method and called method
+
+method example
+
+public static int div(int num1,int num2) {
+		
+		return(num1/num2);
+
+		}
+		
+class and object:
+a factory to produce same kind of objects
+
+class Name:Car
+=======================
+property:
+brand,model,color,capacity
+============================
+methods
+Rocking on road,
+standing 
+out of order
+
+
+System.err.println() if we find any error
+
+
+*********************************************************************************************************************
+                                                       Day-2
+                                                       
+Loop- set of statements
+we need to identify
+- start point 
+-end point
+-and condition
+
+----kinds of loops
+while loop
+do-while loop
+for loop
+
+----types of loops
+entry control loop 
+checks the condition first if true allows otherwise not allowed
+eg: while and for eg:movie ticket because without checking/validating we do not enter
+exit control loop 
+the test condition is checked after the execution of the body of the loop.
+eg-do while
+
+
+
+ If we need toString we can follow this step with out writting code
+source->genarate toString()				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+
+
+
+
+
+
+

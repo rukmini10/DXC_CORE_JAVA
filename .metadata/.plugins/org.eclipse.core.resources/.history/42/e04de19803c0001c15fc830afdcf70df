@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Hospital {
+
+}
+
+class doctor{
+	int doctor_id;
+	String doctor_name;
+	String doctor_specialist;
+	String doctor_contact;
+	String doctor_education;
+	
+	void addDoctor() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Doctors Id: ");
+		doctor_id=sc.nextInt();
+		
+		
+	}
+}

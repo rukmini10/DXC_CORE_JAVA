@@ -1,0 +1,16 @@
+
+public class Hospital {
+
+}
+
+class doctor{
+	int d_id;
+	String d_name;
+	String doctor_specialist;
+	String doctor_contact;
+	String doctor_education;
+	
+	void addDoctor() {
+		Scanner sc=new Scanner(System.in);
+	}
+}

@@ -1,0 +1,140 @@
+import java.util.Scanner;
+
+public class Student {
+	private int numID, year;
+	private String userName, course;
+	private int id;
+	private String name;
+	
+	public Student(int id, int year, String name, String course) {
+		// TODO Auto-generated constructor stub
+		   this.id = id;
+		    this.year = year;
+		    this.name = name;
+		    this.course = course;
+	}
+	
+	public int getId() {
+		return id;
+	}
+
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+
+
+	public int getYear() {
+	    return year;
+	}
+
+	public void setYear(int year) {
+	    this.year = year;
+	}
+
+	public String getName() {
+	    return name;
+	}
+
+	public void setName(String Name) {
+	    this.name = name;
+	}
+
+	public String getCourse() {
+	    return course;
+	}
+
+	public void setCourse(String course) {
+	    this.course = course;
+	}
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		int i=0;
+		displayMenuList();
+
+	}
+	
+	
+	public static void displayMenuList() {
+		Student[] stu=new Student[100];
+		Scanner sc=new Scanner(System.in);
+		int choice;
+		System.out.println("1.Insert Student Data");
+		System.out.println("2.View Student Data");
+		System.out.println("3.Update Student Data");
+		System.out.println("4.Delete Student Data");
+		System.out.println("0.Exit");
+		
+		choice =sc.nextInt();
+		switch(choice) {
+		case 1:
+            addStudent(stu);
+            displayMenuList();
+            break;
+        case 2:
+            viewStudent(stu);
+            displayMenuList();
+            break;
+        case 3:
+        	updateStudent(stu);
+            displayMenuList();
+            break;
+        case 4:
+        	deleteStudent(stu);
+            displayMenuList();
+            break;
+        case 0:
+        	System.out.println("Exited.......");
+            break;
+        default:
+		}
+		
+	}
+	
+	public static void addStudent(Student[] stud){
+	    Scanner sc = new Scanner(System.in);
+	     int id, year;
+	     String name, course;
+
+	    int addMore;
+	    int i = 0;
+	    do{
+
+	        System.out.println("1. Enter Student ID: ");
+	         id = sc.nextInt();
+	        sc.nextLine();
+	        System.out.println("2. Enter Student Year");
+	         year = sc.nextInt();
+	        System.out.println("3. Enter Student Name");
+	         name = sc.nextLine();
+	        System.out.println("4. Enter Student Course");
+	         course = sc.nextLine();
+	    
+			
+	
+			Student[] stu;
+			stu[i] = new Student(id, year, name, course);
+	        ++i;
+
+	        System.out.println("To add another Student Record Press 1");
+	        addMore = sc.nextInt();
+	    }while (addMore == 1 );
+
+	}
+	public static void viewStudent(Student[] stu){
+		 for (Student element : stu) {
+		        if (null != element) {
+	        System.out.println("1. Student ID: " + stud[x].getID());
+	        System.out.println("2. Student Name: " + stud[x].getUserName());
+	        System.out.println("3. Student Course: " + stud[x].getCourse());
+	        System.out.println("4. Student Year: " + stud[x].getYear() + "\n");
+	    }
+
+}

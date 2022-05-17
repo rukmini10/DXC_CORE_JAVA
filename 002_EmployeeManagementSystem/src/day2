@@ -1,0 +1,141 @@
+Class and Object
+-----------------
+Q1. Student.java
+StudentService.java
+
+Class:Student
+=================
+rollNumber
+firstName
+lastName
+stream
+subject1
+subject2
+subject3
+==============
+default constructor
+parameterized constructor
+toString()
+AvgMarks
+
+
+Q2.
+Example:
+create a class called calculator having first number, second number as member variables 
+and add(), multiply(), divide(), compare() methods
+
+============================================
+
+class:Calculator
+---------------------
+firstNumber
+secondNumber
+--------------------
+add()
+subtract()
+multiply()
+divide()
+compare()
+------------------
+
+
+Q3.
+Write a java code which help to get a number and find out its all factors
+=========================================================================
+AllFactors.java
+45
+1-45 
+1,3,5,9,15,45 - factors
+
+num=45
+start i=1
+stop <=45
+step +1
+if(num%i)==0
+factor
+else
+not factor
+
+
+Q4.
+InputOutputOperation.java
+InputOutputOperationService.java
+ java code to 
+1.display all numbers between num1 to num2 / any 2 numbers
+2.count number of digits
+3.reverse of a number
+4.check whether given number is amstrong or not
+5.method to get any two numbers and findout all armstrong numbers between them
+ans)
+class Main {
+  public static void main(String[] args) {
+
+    int low = 999, high = 99999;
+
+    for(int number = low + 1; number < high; ++number) {
+      int digits = 0;
+      int result = 0;
+      int originalNumber = number;
+
+      // number of digits calculation
+      while (originalNumber != 0) {
+        originalNumber /= 10;
+        ++digits;
+      }
+
+      originalNumber = number;
+
+      // result contains sum of nth power of its digits
+      while (originalNumber != 0) {
+        int remainder = originalNumber % 10;
+        result += Math.pow(remainder, digits);
+        originalNumber /= 10;
+      }
+
+      if (result == number) {
+        System.out.print(number + " ");
+      }
+    }
+  }
+}
+
+method overloading
+if a class has more than one method having same name
+
+
+Q.UserChoiuce.java
+you are asked to write java code which will ask user choice and accordingly action has performed
+1.get a number and display its table
+2.get a number and find out whether that number is even or odd
+3.get any two number and find out all between numbers which is divisible by 7
+
+
+do{
+
+
+}while(choice!=0); 
+
+
+4. write a java code
+to create a class called BankAccount having properties
+accountNumber
+accountHolderName
+contactNumber
+balanceAmount
+bankName
+and having following methods
+showAccountDetails()-
+deopsitAmount()
+withdrawAmount() -
+transferAmount()
+minimum amount 100
+minimum balance 1000
+
+
+
+
+
+
+
+
+

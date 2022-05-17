@@ -1,0 +1,9 @@
+package innerclass;
+
+public class School {
+class Student{
+	private int rollNumber;
+	private String name;
+	
+}
+}

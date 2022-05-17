@@ -1,0 +1,57 @@
+import java.util.Vector;
+public class TestEmployeeCollection {
+public static void main(String[] args) {
+Vector<Employee> v =addInput();
+display(v);
+}
+public static Vector<Employee> addInput()
+{
+Employee e1=new Employee(101,"PAVAN","KADAPA");
+Employee e2=new Employee(102,"CHIATHU","DHARMAVARAM");
+Employee e3=new Employee(103,"SURYA","PODHUTHUUR");
+Vector<Employee> v = new Vector<Employee>();
+v.add(e1);
+v.add(e2);
+v.add(e3);
+return v;
+}
+public static void display(Vector<Employee>v)
+{
+for(Employee e:v)
+{
+System.out.println(e.getEmpid()+"\t"+e.getEmpname()+"\t"+e.getAddress());
+}
+}
+}
+
+
+public class Employee {
+private int empid;
+private String empname,address;
+public Employee(int empid, String empname, String empaddress) {
+super();
+this.empid = empid;
+this.empname = empname;
+this.address = empaddress;
+}
+public int getEmpid() {
+return empid;
+}
+public void setEmpid(int empid) {
+this.empid = empid;
+}
+public String getEmpname() {
+return empname;
+}
+public void setEname(String empname) {
+this.empname = empname;
+}
+public String getAddress() {
+return address;
+}
+public void setAddress(String empaddress) {
+this.address = empaddress;
+}
+}
+
+

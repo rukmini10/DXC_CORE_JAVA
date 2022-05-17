@@ -1,0 +1,30 @@
+package threadpool;
+
+import java.util.Date;
+
+public class Task implements Runnable{
+public String name;
+public Task(String name) {
+	this.name=name;
+}
+
+	@Override
+	public void run() {
+		try {
+			for(int i=0;i<5;i++) {
+				if(i==0) {
+					Date today=new Date();
+				}
+			}
+		}catch(Exception e) {
+			
+		}
+	}
+
+}
+
+/*
+ *create a task
+ *create executor pool with help of executors
+ *shutdown the executor pool 
+ */

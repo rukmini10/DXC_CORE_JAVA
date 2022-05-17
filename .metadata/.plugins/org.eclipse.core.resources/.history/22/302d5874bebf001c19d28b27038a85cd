@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Student {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student[] stu=new Student[100];
+		int i=0;
+		displayMenuList();
+
+	}
+	
+	
+	public static void displayMenuList() {
+	
+		Scanner sc=new Scanner(System.in);
+		int choice;
+		System.out.println("1.Insert Student Data");
+		System.out.println("2.View Student Data");
+		System.out.println("3.Update Student Data");
+		System.out.println("4.Delete Student Data");
+		System.out.println("0.Exit");
+		
+		choice =sc.nextInt();
+		
+
+
+	}
+
+}

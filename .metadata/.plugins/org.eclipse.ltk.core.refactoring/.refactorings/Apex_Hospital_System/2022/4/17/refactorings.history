@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;apex.hospital.HospitalStaff&apos; to &apos;HelpingStaff&apos;&#x0D;&#x0A;- Original project: &apos;Apex_Hospital_System&apos;&#x0D;&#x0A;- Original element: &apos;apex.hospital.HospitalStaff&apos;&#x0D;&#x0A;- Renamed element: &apos;apex.hospital.HelpingStaff&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;HospitalStaff&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;apex.hospital{HospitalStaff.java[HospitalStaff" matchStrategy="1" name="HelpingStaff" qualified="false" references="true" similarDeclarations="false" stamp="1650552336059" textual="false" version="1.0"/>
+</session>

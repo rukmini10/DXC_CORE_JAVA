@@ -1,0 +1,28 @@
+Topics
+===========
+1.Java basics
+2.control flow concept
+3.class and objects
+4.arrays in java
+5.method overloading
+6.overriding
+7.inheritance, polymorphism(all oops concept)
+8.abstract class
+9.interface
+10.exception handling
+11. file(IO operation)
+12.collections
+13.multitasking
+14.multi threading
+15.lambda expression-version added in java1.8
+16.functional interface- any interfae having single abstract method
+16.marker interface
+17.all classes types
+18.functional Interface
+19. labda function
+20.stream api
+21.stream with filter
+22.web services
+23.rest apis
+
+maven-it is a project management tool

@@ -1,0 +1,10 @@
+package threadpool;
+
+public class Main {
+static final int MAX_THREADS = 3;
+	public static void main(String[] args) {
+		
+
+	}
+
+}

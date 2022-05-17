@@ -1,0 +1,57 @@
+
+public class StudentService {
+	private int numID, year;
+	private String userName, course;
+	private int id;
+	private String name;
+
+	public void Student(int id, int year, String name, String course) {
+
+	    this.id = id;
+	    this.year = year;
+	    this.name = name;
+	    this.course = course;
+
+	}
+
+
+	
+
+	public int getId() {
+		return id;
+	}
+
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+
+
+	public int getYear() {
+	    return year;
+	}
+
+	public void setYear(int year) {
+	    this.year = year;
+	}
+
+	public String getName() {
+	    return Name;
+	}
+
+	public void setUserName(String userName) {
+	    this.userName = userName;
+	}
+
+	public String getCourse() {
+	    return course;
+	}
+
+	public void setCourse(String course) {
+	    this.course = course;
+	}
+}

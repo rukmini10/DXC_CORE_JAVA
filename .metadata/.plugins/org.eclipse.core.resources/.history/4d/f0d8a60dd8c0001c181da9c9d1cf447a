@@ -1,0 +1,114 @@
+//https://www.programmingwithbasics.com/2017/11/hospital-management-system-project-in.html
+/*
+import java.util.Objects;
+
+public class Doctor {
+private int doctor_id;
+private String doctor_name;
+private String doctor_specialist;
+private String doctor_contact;
+private String doctor_education;
+public Doctor() {
+	
+}
+public Doctor(int doctor_id, String doctor_name, String doctor_specialist, String doctor_contact,
+		String doctor_education) {
+	super();
+	this.doctor_id = doctor_id;
+	this.doctor_name = doctor_name;
+	this.doctor_specialist = doctor_specialist;
+	this.doctor_contact = doctor_contact;
+	this.doctor_education = doctor_education;
+}
+public int getDoctor_id() {
+	return doctor_id;
+}
+public void setDoctor_id(int doctor_id) {
+	this.doctor_id = doctor_id;
+}
+public String getDoctor_name() {
+	return doctor_name;
+}
+public void setDoctor_name(String doctor_name) {
+	this.doctor_name = doctor_name;
+}
+public String getDoctor_specialist() {
+	return doctor_specialist;
+}
+public void setDoctor_specialist(String doctor_specialist) {
+	this.doctor_specialist = doctor_specialist;
+}
+public String getDoctor_contact() {
+	return doctor_contact;
+}
+public void setDoctor_contact(String doctor_contact) {
+	this.doctor_contact = doctor_contact;
+}
+public String getDoctor_education() {
+	return doctor_education;
+}
+public void setDoctor_education(String doctor_education) {
+	this.doctor_education = doctor_education;
+}
+@Override
+public String toString() {
+	return "doctor_id=" + doctor_id + ", doctor_name=" + doctor_name + ", doctor_specialist="
+			+ doctor_specialist + ", doctor_contact=" + doctor_contact + ", doctor_education=" + doctor_education ;
+}
+@Override
+public int hashCode() {
+	return Objects.hash(doctor_contact, doctor_education, doctor_id, doctor_name, doctor_specialist);
+}
+@Override
+public boolean equals(Object obj) {
+	if (this == obj)
+		return true;
+	if (obj == null)
+		return false;
+	if (getClass() != obj.getClass())
+		return false;
+	Doctor other = (Doctor) obj;
+	return Objects.equals(doctor_contact, other.doctor_contact)
+			&& Objects.equals(doctor_education, other.doctor_education) && doctor_id == other.doctor_id
+			&& Objects.equals(doctor_name, other.doctor_name)
+			&& Objects.equals(doctor_specialist, other.doctor_specialist);
+}
+
+
+}
+*/
+
+
+import java.util.Scanner;
+
+public class Docotr {
+
+
+
+class doctor{
+	int doctor_id;
+	String doctor_name;
+	String doctor_specialist;
+	String doctor_contact;
+	String doctor_education;
+	void addDoctor() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Doctors Id: ");
+		doctor_id=sc.nextInt();
+		System.out.println("Enter Doctors Name: ");
+		doctor_name=sc.nextLine();
+		System.out.println("Enter Doctors Specialisation: ");
+		doctor_specialist=sc.nextLine();
+		System.out.println("Enter Doctors Contact Number: ");
+		doctor_contact=sc.nextLine();
+		System.out.println("Enter Doctors Education: ");
+		doctor_education=sc.nextLine();
+			
+	}
+	
+	void displayDoctor() {
+		System.out.println("doctor_id=" + doctor_id + "\n doctor_name=" + doctor_name + "\n doctor_specialist="
+				+ doctor_specialist + "\n doctor_contact=" + doctor_contact + "\n doctor_education=" + doctor_education);
+	}
+}
+}

@@ -1,0 +1,44 @@
+//https://www.programmingwithbasics.com/2017/11/hospital-management-system-project-in.html
+
+import java.util.Scanner;
+
+public class Doctor {
+
+	int doctor_id;
+	String doctor_name;
+	String doctor_specialist;
+	String doctor_contact;
+	String doctor_education;
+	void addDoctor() {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Doctors Id: ");
+		doctor_id=sc.nextInt();
+		System.out.println("Enter Doctors Name: ");
+		doctor_name=sc.nextLine();
+		System.out.println("Enter Doctors Specialisation: ");
+		doctor_specialist=sc.nextLine();
+		System.out.println("Enter Doctors Contact Number: ");
+		doctor_contact=sc.nextLine();
+		System.out.println("Enter Doctors Education: ");
+		doctor_education=sc.nextLine();
+			
+	}
+	
+	void displayDoctor() {
+		System.out.println("doctor_id=" + doctor_id + "\n doctor_name=" + doctor_name + "\n doctor_specialist="
+				+ doctor_specialist + "\n doctor_contact=" + doctor_contact + "\n doctor_education=" + doctor_education);
+	
+		System.out.println(doctor_id + "\t" + doctor_name + "  \t" + doctor_specialist + "     \t" + doctor_contact + "    \t" + doctor_education );
+
+	}
+
+	public void addNurse() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void addHelpingStaff() {
+		// TODO Auto-generated method stub
+		
+	}
+}

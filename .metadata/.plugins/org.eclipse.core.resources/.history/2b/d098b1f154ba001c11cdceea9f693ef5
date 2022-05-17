@@ -1,0 +1,11 @@
+package threadpool;
+
+public class Task {
+
+}
+
+/*
+ *create a task
+ *create executor pool with help of executors
+ *shutdown the executor pool 
+ */

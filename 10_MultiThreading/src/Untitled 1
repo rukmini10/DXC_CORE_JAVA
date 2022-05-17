@@ -1,0 +1,14 @@
+Multi Threading
+--------------------
+
+void start()
+creates a new thread and makes it runnable
+
+void yield()
+it gives priority to other threads 
+causes the currently excecutes thread and pause 
+
+runnable interface
+-----------
+running stage which run method starts executing
+

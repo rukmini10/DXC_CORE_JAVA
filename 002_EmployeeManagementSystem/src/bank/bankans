@@ -1,0 +1,89 @@
+package bankaccount;
+import java.util.*;
+public class Classbank {
+	long accountNumber;
+	String accountHolderName ;
+	long contactNumber;
+	int balanceAmount;
+	String bankName;
+	
+	Scanner key = new Scanner(System.in);
+	
+	public Classbank() {
+		
+		this.accountNumber = 330119876;
+		this.accountHolderName = "Chaithanya";
+		this.contactNumber = 63036612;
+		this.balanceAmount = 5000;
+		this.bankName = "HDFCbank";
+	}
+
+
+
+	public String showAccountDetails() {
+		return "accountNumber=" + accountNumber  + " \naccountHolderName= " + accountHolderName
+				+ "\ncontactNumber=" + contactNumber + "\nbalanceAmount=" + balanceAmount + "\nbankName=" + bankName;
+				
+	}
+	/*WA=WithdrawAmount
+	 * DA=DepositAmount
+	 * TA=TransferAmount
+*/
+   public  int WA() {
+	   System.out.println("Enter the Withdraw amount: ");
+	   int amount = key.nextInt();
+	   if(balanceAmount >=1000) {
+		   if(amount<balanceAmount) {
+			   System.out.println( amount+"Rupees" + " Amount Withdraw successfully\n" + "Balance Amount = " + (balanceAmount - amount));
+		   }else {
+			   System.out.println("insufficient balance");
+		   }
+		   
+	   }
+	   else {
+		   System.out.println("Can't withdraw amount, minimum balance Required ");
+	   }
+	   
+	   return   amount ;
+   }
+   
+   public  int TA() {
+	   System.out.println("Enter the amount to be transferred : ");
+	   int amount = key.nextInt();
+	   if(balanceAmount >=1000) {
+		   if(amount<balanceAmount) {
+			   System.out.println(amount +"Rupees"+ "Amount successfully transferred\n" + "Balance Amount = " + (balanceAmount - amount));
+		   }else {
+			   System.out.println("insufficient balance");
+		   }
+		   
+	   }
+	   else {
+		   System.out.println("Can't transfer amount,  minimum balance Required");
+	   }
+	return amount;
+	   
+	   
+   }
+   
+   public int DA() {
+	   System.out.println("Enter the Deposit amount: ");
+	   int amount = key.nextInt();
+	   System.out.println("rs " + amount + "Amount successfully deposited\n" + "Balance Amount = " + (balanceAmount + amount));
+	   return amount ;
+	   
+	   
+   }
+   
+   
+
+	public static void main(String[] args) {
+		Classbank bankaccount = new Classbank();
+		System.out.println(bankaccount.showAccountDetails());
+		System.out.println(bankaccount.WA());
+		System.out.println(bankaccount.DA());
+		System.out.println(bankaccount.TA());
+		//System.out.println();
+
+	}
+}

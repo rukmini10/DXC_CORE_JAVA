@@ -1,0 +1,57 @@
+Exception 
+-----------------
+plan
+
+div(int,int) try to divide first number by second number and show the result
+
+
+
+
+
+/*
+java code to get a number and find out its factorial
+if num>0 then it should work find factorial
+else no need to work show error show exception
+exception handling try catch use
+
+class:FactorialFinder
+method:findFactorial(int)
+method:main()
+1.get a number
+2.create object of FactorialFinder
+3.call findFactorial()
+
+*/
+
+/*
+create two array and divide first array element with second array element
+arr1[]={23,45,67,90}
+arr2[]={23,45,0}
+
+
+*/
+
+
+/*
+java code to get birth year of diver and his/her driving experience years
+find out their insurance premium
+if age<18 and age>60 then driver is not applicable
+if age>18 and having experience less than 5 years then he/she has to pay 5400
+if age>18 and having experience till 10 years then he/she has to pay 5000
+if age>18 and having experience till 20 years then he/she has to pay 4000
+if age>18 and having experience till 30 years then he/she has to pay 3000
+if age>18 and having experience greater than 30 years then he/she has to pay 3000
+otherwise not applicable
+*/
+
+
+
+
+
+
+
+
+
+
+
+

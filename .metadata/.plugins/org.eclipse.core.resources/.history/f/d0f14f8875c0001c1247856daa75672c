@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Hospital {
+
+public static void main(String args[]) {
+	System.out.println("Hello Manager Welcome to the Apex Hospital Management");
+	System.out.println("-----------------------------------------------------");
+	
+}
+
+class doctor{
+	int doctor_id;
+	String doctor_name;
+	String doctor_specialist;
+	String doctor_contact;
+	String doctor_education;
+	
+}
+}
